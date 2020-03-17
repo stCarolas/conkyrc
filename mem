@@ -1,0 +1,38 @@
+conky.config = {
+    alignment = 'bottom_left',
+    border_width = 2,
+    cpu_avg_samples = 2,
+	  default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    double_buffer = true,
+    draw_borders = true,
+    draw_graph_borders = false,
+    draw_outline = false,
+    draw_shades = false,
+    use_xft = true,
+    font = 'Bauhaus:size=19',
+    gap_x = 20,
+    gap_y = 20,
+	  minimum_width = 590,
+    net_avg_samples = 2,
+    no_buffers = true,
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_transparent = false,
+    own_window_argb_visual = true,
+    own_window_argb_value = 100,
+    stippled_borders = 0,
+    update_interval = 0.1,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false
+}
+
+conky.text = [[
+${alignc}${loadavg}
+${cpugraph 100 green}
+${alignc}${mem}/${memmax}
+${memgraph 100 green}
+]]

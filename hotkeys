@@ -1,0 +1,29 @@
+conky.config = {
+    alignment = 'top_right',
+	  default_color = 'white',
+    color1 = 'lightgreen',
+    double_buffer = true,
+    use_xft = true,
+    font = 'Cantarell:size=18',
+    font1 = 'FreeMono:size=20',
+    gap_x = 0,
+    gap_y = 20,
+	  minimum_width = 600,
+	  minimum_height = 260,
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_argb_visual = true,
+    own_window_argb_value = 165
+}
+
+
+conky.text = [[
+ ${font1}${color1}zo ${color}${font}Open one fold under the cursor.
+ ${font1}${color1}zO ${color}${font}Open one fold under the cursor recursively.
+ ${font1}${color1}zc ${color}${font}Close one fold under the cursor.
+ ${font1}${color1}zC ${color}${font}Close all folds under the cursor recursively.
+ ${font1}${color1}za ${color}${font}Toogle fold.
+ ${font1}${color1}zA ${color}${font}Toggle folds recursively.
+ ${font1}${color1}zv ${color}${font}View cursor line.
+ ${font1}${color1}zx ${color}${font}Update folds: Undo manually changed folds.
+]]
