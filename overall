@@ -1,18 +1,17 @@
 conky.config = {
-    alignment = 'top_left',
-    backgroun = true,
+    alignment = 'bottom_right',
     border_width = 2,
     cpu_avg_samples = 2,
 	  default_color = 'white',
-    default_outline_color = 'white',
+    default_outline_color = 'blue',
     default_shade_color = 'white',
     double_buffer = true,
-    draw_borders = true,
+    draw_borders = false,
     draw_graph_borders = true,
-    draw_outline = false,
-    draw_shades = false,
+    draw_outline = true,
+    draw_shades = true,
     use_xft = true,
-    font = 'Bauhaus:size=19',
+    font = 'Bauhaus:size=21',
     gap_x = 20,
     gap_y = 20,
     minimum_height = 5,
@@ -26,7 +25,7 @@ conky.config = {
     own_window_type = 'desktop',
     own_window_transparent = false,
     own_window_argb_visual = true,
-    own_window_argb_value = 122,
+    own_window_argb_value = 0,
     stippled_borders = 0,
     update_interval = 1.0,
     uppercase = false,
@@ -36,7 +35,6 @@ conky.config = {
 }
 
 conky.text = [[
- ${color green}hostname: $color$alignr$nodename 
- ${color green}Uptime: $alignr$color$uptime 
- ${color green}OS: $alignr$color${exec cat /etc/fedora-release} 
+ $nodename 
+ $uptime 
 ]]

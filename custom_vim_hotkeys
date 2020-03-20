@@ -1,0 +1,24 @@
+conky.config = {
+    alignment = 'top_right',
+	  default_color = 'white',
+    color1 = 'lightgreen',
+    double_buffer = true,
+    use_xft = true,
+    font = 'Cantarell:size=18',
+    font1 = 'FreeMono:size=20',
+    gap_x = 0,
+    gap_y = 320,
+	  minimum_width = 600,
+	  minimum_height = 260,
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_argb_visual = true,
+    own_window_argb_value = 165
+}
+
+
+conky.text = [[
+ ${font1}${color1}<space>o ${color}${font}:lopen
+ ${font1}${color1}   <A-j> ${color}${font}:bnext
+ ${font1}${color1}   <A-k> ${color}${font}:bprev
+]]
